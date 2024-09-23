@@ -1,0 +1,29 @@
+/* CSS untuk keseluruhan website */
+body {
+    margin: 0;
+}
+
+/* CSS di dalam header */
+.header {
+    display: flex;
+    justify-content: end;
+    padding: 0 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: auto;
+}
+
+.navigasi {
+    align-content: center;
+}
+
+/* Css Untuk Tag Footer */
+.copyright {
+    text-align: center;
+    background-color: #00171f;
+    color: white;
+    padding: 10px 0;
+}
