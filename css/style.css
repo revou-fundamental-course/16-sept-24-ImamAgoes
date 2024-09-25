@@ -1,29 +1,159 @@
 /* CSS untuk keseluruhan website */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 body {
     margin: 0;
+    background-color: #e6e6e8;
+    font-family: 'DM Sans';
 }
 
-/* CSS di dalam header */
-.header {
+/* CSS untuk header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
-    justify-content: end;
-    padding: 0 10px;
+    justify-content: space-between;
+    transition: 0.6s;
+    padding-top: 15px;
 }
 
+/* Untuk Sticky header yang di toggle menggunakan JS apabila di scroll */
+header.sticky {
+    padding: 5px 0px;
+    background-color: #2255b1;
+
+}
+
+header.sticky > .navigasi > a {
+    color: white;
+}
+
+header.sticky > .navigasi > a:hover {
+    color: #ecd452;
+}
+
+/* CSS Navigasi */
 .logo {
-    width: 50px;
+    padding-top: 5px;
+    padding-left: 48px;
     height: 50px;
-    margin-right: auto;
+    transition: transform 0.5s;
+}
+
+.logo:hover {
+    transform: scale(0.95);
 }
 
 .navigasi {
     align-content: center;
+    padding-right: 30px;
+}
+
+.navigasi > a {
+    font-size: 22px;
+    color: #ec68a5;
+    text-decoration: none;
+    font-size: 19px;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.navigasi > a:hover {
+    color: #2255b1;
+}
+
+/* CSS untuk Hero Section */
+.hero-section {
+    height: 578px;
+    background-image: url("../assets/hero-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.hero-content {
+    flex: 2;
+    padding: 120px 50px 0px 50px;
+    align-content: center;
+}
+
+.hero-content > h1 {
+    font-size: 65px;
+    font-weight: bold;
+    color: #2255b1;
+    margin: 0;
+}
+
+.hero-content > p {
+    font-size: 35px;
+    font-weight: bold;
+    color: #ec68a5;
+    margin: 0;
+}
+
+#web-explain {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.hero-content > button {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    background-color: #2255b1;
+    padding: 15px 32px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.hero-content > button:hover {
+    background-color: #173c80;
+}
+
+/* CSS untuk Section 2*/
+.section-2 {
+    height: 578px;
+    background-image: url("../assets/section-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 55px;
+}
+
+.section-2 > h1 {
+    font-size: 32px;
+    color: #173c80;
+    padding-top: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.section-explain {
+    font-size: 16px;
+    color: #ec68a5; 
+    text-align: center;
+    padding: 0 50px;
+}
+
+/* CSS untuk Section 3*/
+.section-3 {
+    height: 578px;
+    background-image: url("../assets/section-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 55px;
 }
 
 /* Css Untuk Tag Footer */
 .copyright {
     text-align: center;
-    background-color: #00171f;
+    background-color: #2255b1;
     color: white;
     padding: 10px 0;
 }
