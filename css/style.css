@@ -7,6 +7,10 @@ body {
     font-family: 'DM Sans';
 }
 
+.container {
+    padding: 0px 55px;
+}
+
 /* CSS untuk header */
 header {
     position: fixed;
@@ -111,10 +115,12 @@ header.sticky > .navigasi > a:hover {
     font-size: 16px;
     text-decoration: none;
     border-radius: 50px;
+    transition: 0.5s;
 }
 
 .hero-content > button:hover {
     background-color: #173c80;
+    transform: scale(0.95);
 }
 
 /* CSS untuk Section 2*/
@@ -127,7 +133,7 @@ header.sticky > .navigasi > a:hover {
 }
 
 .section-2 > h1 {
-    font-size: 32px;
+    font-size: 42px;
     color: #173c80;
     padding-top: 40px;
     margin: 0;
@@ -143,17 +149,117 @@ header.sticky > .navigasi > a:hover {
 
 /* CSS untuk Section 3*/
 .section-3 {
-    height: 578px;
+    height: 520px;
     background-image: url("../assets/section-3.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 55px;
 }
 
+.section-3 > h1 {
+    color: white;
+    font-size: 34px;
+    text-align: end;
+}
+
+.portfolio-showcase {
+    display: flex;
+    justify-content: end;
+}
+
+.portfolio-showcase > div {
+    display: inline-block;
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.portfolio-showcase > div > a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #173c80;
+}
+
+.portfolio-showcase > div > a > img {
+    border-radius: 50%;
+    padding: 10px;
+    border: 8px solid #ecd452;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    max-width: 200px;
+}
+
+.portfolio-showcase > div > a > img:hover {
+    transform: scale(0.95);
+}
+
+.button-more {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-more > a > button{
+    background-color: #2255b1;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: white;
+    transition: 0.5s;
+}
+
+.button-more > a > button:hover {
+    background-color: #173c80;
+    transform: scale(0.95);
+}
+
+/* CSS Untuk Section 4 */
+.section-4 {
+    height: 480px;
+    display: flex;
+    margin: -20px 0 25px 0px;
+}
+
+#message-us-1{
+    flex: 1;
+    text-align: center;
+    background-image: url("../assets/footer-bg.png");
+    border-radius: 20px;
+}
+
+#message-us-1 > h1 {
+    color: white;
+    padding-top: 10px;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+#message-us-1 > p {
+    color: white;
+    font-size: 14px;
+}
+
+#message-us-1 > .form-inline {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0px 25px;
+}
+
+#message-us-2{
+    flex: 1;
+}
+
 /* Css Untuk Tag Footer */
+footer {
+    background-image: url("../assets/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .copyright {
     text-align: center;
-    background-color: #2255b1;
     color: white;
     padding: 10px 0;
+    margin: 0;
 }
