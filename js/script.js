@@ -1,5 +1,8 @@
 // Meminta User untuk menginput namanya
-
+const namaUser = prompt("Masukkan nama kamu");
+if (namaUser != null){
+    document.getElementById("nama-user").innerHTML = namaUser + "!";
+}
 
 // JS untuk sticky header
 window.addEventListener("scroll", function(){

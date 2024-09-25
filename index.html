@@ -31,7 +31,7 @@
         <!-- Section 1 - Hero Section yang ada Button -->
         <section class="hero-section">
             <div class="hero-content">
-                <h1>Hi <span>Imam</span> Welcome to website</h1>
+                <h1>Hi <span id="nama-user">Agoez!</span> Welcome to website</h1>
                 <p>Build your Brand Now!</p>
                 <p id="web-explain">
                     Agoez Web Studio will help you to successfully achieve the brand persona that meets to what your clients want.
@@ -95,18 +95,47 @@
                 <p>We are happy to help your business grow, don't hesitate to message us, because consultation is free</p>
 
                 <form action="" class="form-inline">
-                    <!-- Div untuk Label -->
-                    <div>
-                        <label for="nama-lengkap">Full Name</label>
-                    </div>
-                    <!-- Div untuk titik dua -->
-                    <div>
-                        <label for="nama-lengkap">:</label>
-                    </div>
-                    <!-- Div untuk input -->
-                     <div>
-                        <input type="text" name="nama-lengkap" id="nama-lengkap">
-                     </div>
+                    <table style="width: 100%;">
+                        <!-- Item Input Nama Lengkap -->
+                        <tr class="row-height">
+                            <td><label for="nama-lengkap">Full Name</label></td>
+                            <td>:</td>
+                            <td><input type="text" name="nama-lengkap" id="nama-lengkap" class="space-input" style="border: none;"></td>
+                        </tr>
+
+                        <!-- Item Input Tanggal Lahir -->
+                        <tr class="row-height">
+                            <td><label for="tgl-lahir">Birthday Date</label></td>
+                            <td>:</td>
+                            <td><input type="date" name="tgl-lahir" id="tgl-lahir" class="space-input"></td>
+                        </tr>
+
+                        <!-- Item Radio Button Jenis Kelamin -->
+                        <tr class="row-height">
+                            <td>Select Gender</td>
+                            <td>:</td>
+                            <td>
+                                <input class="radio-adjust" type="radio" name="jenis-kelamin" id="male" value="male">
+                                <label for="male">Male</label>
+                                <input class="radio-adjust" type="radio" name="jenis-kelamin" id="female" value="female">
+                                <label for="female">Female</label>
+                            </td>
+                        </tr>
+
+                        <!-- Item Text Area kelas -->
+                        <tr class="row-height">
+                            <td style="vertical-align: top;">Your Message</td>
+                            <td style="vertical-align: top;">:</td>
+                            <td>
+                                <textarea rows="4" cols="50" name="message" style="width: 97%; margin-left: 10px;"></textarea>
+                            </td>
+                        </tr>
+
+                        <!-- tr untuk button -->
+                         <tr class="row-height">
+                            <td colspan="3"><button type="submit" class="submit-btn">Send Message</button></td>
+                         </tr>
+                    </table>
                 </form>
             </div>
             <div id="message-us-2">
