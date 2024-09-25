@@ -58,29 +58,29 @@
             <!-- Portfolio Showcase Section -->
              <section class="portfolio-showcase">
                 <div>
-                    <a href=""><img src="assets/clients/hopon-jet.png" alt="portfolio-1"></a>
+                    <a target="_blank" href="https://hopon-jet.com"><img src="assets/clients/hopon-jet.png" alt="portfolio-1"></a>
                     <br>
-                    <a href="">Hop-On Jet</a>
+                    <a target="_blank" href="https://hopon-jet.com">Hop-On Jet</a>
                 </div>
                 <div>
-                    <a href=""><img src="assets/clients/bookatrip.png" alt="portfolio-2"></a>
+                    <a target="_blank" href="https://bookatrip.id"><img src="assets/clients/bookatrip.png" alt="portfolio-2"></a>
                     <br>
-                    <a href="">BookaTrip</a>
+                    <a target="_blank" href="https://bookatrip.id">BookaTrip</a>
                 </div>
                 <div>
-                    <a href=""><img src="assets/clients/polnep.png" alt="portfolio-3"></a>
+                    <a target="_blank" href="https://arsitektur.polnep.ac.id"><img src="assets/clients/polnep.png" alt="portfolio-3"></a>
                     <br>
-                    <a href="">T. Arsitektur Polnep</a>
+                    <a target="_blank" href="https://arsitektur.polnep.ac.id">T. Arsitektur Polnep</a>
                 </div>
                 <div>
-                    <a href=""><img src="assets/clients/UNS.png" alt="portfolio-3"></a>
+                    <a target="_blank" href="https://siagung-uns.com"><img src="assets/clients/UNS.png" alt="portfolio-3"></a>
                     <br>
-                    <a href="">Siagung - UNS</a>
+                    <a target="_blank" href="https://siagung-uns.com">Siagung - UNS</a>
                 </div>
                 <div>
-                    <a href=""><img src="assets/clients/pontianak.png" alt="portfolio-3"></a>
+                    <a target="_blank" href="https://dprkp.pontianak.go.id/"><img src="assets/clients/pontianak.png" alt="portfolio-3"></a>
                     <br>
-                    <a href="">DPRKP - Pontianak</a>
+                    <a target="_blank" href="https://dprkp.pontianak.go.id/">DPRKP - Pontianak</a>
                 </div>
             </section>
              <section class="button-more">
@@ -94,13 +94,13 @@
                 <h1>Let's Discuss</h1>
                 <p>We are happy to help your business grow, don't hesitate to message us, because consultation is free</p>
 
-                <form action="" class="form-inline">
+                <article class="form-inline">
                     <table style="width: 100%;">
                         <!-- Item Input Nama Lengkap -->
                         <tr class="row-height">
                             <td><label for="nama-lengkap">Full Name</label></td>
                             <td>:</td>
-                            <td><input type="text" name="nama-lengkap" id="nama-lengkap" class="space-input" style="border: none;"></td>
+                            <td><input type="text" name="nama-lengkap" id="nama-lengkap" class="space-input" style="border: none;" placeholder="e.g: Harry Potter"></td>
                         </tr>
 
                         <!-- Item Input Tanggal Lahir -->
@@ -127,19 +127,19 @@
                             <td style="vertical-align: top;">Your Message</td>
                             <td style="vertical-align: top;">:</td>
                             <td>
-                                <textarea rows="4" cols="50" name="message" style="width: 97%; margin-left: 10px;"></textarea>
+                                <textarea rows="4" cols="50" name="message" id="pesan-text" style="width: 97%; margin-left: 10px;" placeholder="e.g: Hey, let's discuss about a web development"></textarea>
                             </td>
                         </tr>
 
                         <!-- tr untuk button -->
                          <tr class="row-height">
-                            <td colspan="3"><button type="submit" class="submit-btn">Send Message</button></td>
+                            <td colspan="3"><button type="button" class="submit-btn" onclick="tampilPesan()">Send Message</button></td>
                          </tr>
                     </table>
-                </form>
+                </article>
             </div>
             <div id="message-us-2">
-
+                
             </div>
           </section>
     </main>

@@ -27,7 +27,8 @@ header {
 header.sticky {
     padding: 5px 0px;
     background-color: #2255b1;
-
+    border: 1px solid transparent; 
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 header.sticky > .navigasi > a {
@@ -192,6 +193,10 @@ header.sticky > .navigasi > a:hover {
     transform: scale(0.95);
 }
 
+.portfolio-showcase > div > a:hover {
+    text-decoration: underline;
+}
+
 .button-more {
     margin-top: 50px;
     display: flex;
@@ -277,8 +282,10 @@ header.sticky > .navigasi > a:hover {
     margin: 0px 0px 0px 10px;
 }
 
+/* CSS Untuk Section Buat Menampilkan Hasil Submit Message*/
 #message-us-2{
     flex: 1;
+    text-align: center;
 }
 
 /* Css Untuk Tag Footer */
